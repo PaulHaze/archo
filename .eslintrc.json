@@ -15,7 +15,7 @@
     "import/extensions": [
       "error",
       "never",
-      { "json": "always", "png": "always", "scss": "always" }
+      { "json": "always", "png": "always", "scss": "always", "css": "always" }
     ],
     "import/no-unresolved": [0],
     "react/prop-types": [0],
