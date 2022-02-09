@@ -25,6 +25,6 @@
 
 @layer components {
   .bb {
-    @apply border border-red-600 sm:border-blue-600 md:border-green-600 lg:border-black
+    @apply border border-red-600 sm:border-blue-600 md:border-green-600 lg:border-black;
   }
 }
