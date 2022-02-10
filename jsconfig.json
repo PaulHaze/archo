@@ -7,7 +7,8 @@
       "@Layouts": ["layouts/index"],
       "@Features": ["features/index"],
       "@Sections": ["sections/index"]
-    }
+    },
+    "noEmit": true
   },
   "exclude": ["node_modules"]
 }

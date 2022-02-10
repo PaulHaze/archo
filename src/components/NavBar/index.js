@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import appData from '@/data/app.json';
 import { getSiblings } from '@/scripts';
 
 export function NavBar({ navbarRef, logoRef, logoClass }) {
-  // const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   // used to toggle the dropdown menu
   // shows siblings via the 'show' class
   // removes them if they are present
@@ -28,6 +28,7 @@ export function NavBar({ navbarRef, logoRef, logoClass }) {
   };
 
   const handleMobileDropdown = () => {
+    setIsMenuOpen(prev => !prev);
     document
       .getElementById('navbarSupportedContent')
       .classList.toggle('show-with-trans');
@@ -54,8 +55,8 @@ export function NavBar({ navbarRef, logoRef, logoClass }) {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="icon-bar">
-            <i className="fas fa-bars" />
+          <span className="icon-bar mr-1">
+            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`} />
           </span>
         </button>
         <div id="navbarSupportedContent" className="collapse navbar-collapse">
