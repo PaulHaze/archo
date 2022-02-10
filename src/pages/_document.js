@@ -10,7 +10,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html>
         <Head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +20,6 @@ class MyDocument extends Document {
           />
           <meta name="author" content="Artemist" />
           <link rel="icon" href="/assets/img/favicon.ico" />
-          <title>Archo By Artemist</title>
           <link
             href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
             rel="stylesheet"
@@ -41,11 +40,11 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           />
-          <body>
-            <Main />
-            <NextScript />
-          </body>
         </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
       </Html>
     );
   }
