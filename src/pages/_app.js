@@ -5,8 +5,8 @@ import Head from 'next/head';
 import { LoadingScreen, ScrollToTop } from '@Components';
 
 import '@/styles/main.scss';
-import '@/styles/custom.scss';
 import '@/styles/globals.css';
+import '@/styles/custom.scss';
 
 function MyApp({ Component, pageProps }) {
   return (
