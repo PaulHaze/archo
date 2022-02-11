@@ -4,19 +4,19 @@
 
 @layer base {
   h1 {
-    @apply text-4xl font-normal leading-normal;
+    @apply text-4xl  leading-normal;
   }
   h2 {
-    @apply text-3xl font-normal leading-normal;
+    @apply text-3xl leading-normal;
   }
   h3 {
-    @apply text-2xl font-normal leading-normal;
+    @apply text-2xl leading-normal;
   }
   h4 {
-    @apply text-xl font-normal leading-normal;
+    @apply text-xl  leading-normal;
   }
   h5 {
-    @apply text-lg font-normal leading-normal;
+    @apply text-lg  leading-normal;
   }
   a {
     @apply text-blue-600;

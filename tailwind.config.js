@@ -27,6 +27,12 @@ module.exports = {
       center: true,
     },
     extend: {
+      colors: {
+        primary: {
+          dark: '#252531',
+          light: '#F8F4F3',
+        },
+      },
       minWidth: {
         sm: '640px',
         md: '768px',

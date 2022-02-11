@@ -6,3 +6,6 @@ export { ScrollToTop } from './ScrollToTop';
 
 // NAV
 export { NavBar } from './NavBar';
+
+// FOOTER
+export { Footer } from './Footer';

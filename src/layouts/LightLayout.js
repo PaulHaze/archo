@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 
 import Head from 'next/head';
 
-import { NavBar } from '@Components';
+import { NavBar, Footer } from '@Components';
 
 import appData from '@/data/app.json';
 
@@ -38,6 +38,9 @@ export function LightLayout({ children }) {
       </Head>
       <NavBar navbarRef={navbarRef} logoRef={logoRef} />
       {children}
+      <div className="mt-8">
+        <Footer />
+      </div>
     </>
   );
 }
