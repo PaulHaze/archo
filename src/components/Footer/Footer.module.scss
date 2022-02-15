@@ -1,5 +1,5 @@
 .footerContainer {
-  @apply bg-primary-dark m-0 w-full p-2 pl-8 xs:pl-10 flex flex-col space-y-3 max-w-xl mx-auto;
+  @apply bg-primary-dark m-0 w-full p-2 px-8 xs:pl-10 flex flex-col space-y-3 max-w-xl mx-auto;
   @screen sm {
     @apply pl-16;
   }
@@ -21,7 +21,6 @@
 
 .textContainer {
   @apply pr-2 xs:ml-4 flex flex-col justify-around xs:justify-between;
-
   & > p {
     @apply text-xs leading-5 xs:text-sm xs:leading-7;
     @screen md {
@@ -30,5 +29,24 @@
     @screen lg {
       @apply text-sm;
     }
+  }
+}
+
+.subscribe {
+  @apply w-full relative border border-slate-100/20 rounded-[30px] overflow-hidden;
+  & > input {
+    @apply w-4/5 bg-transparent pl-4 py-4 text-xs border-white/20;
+  }
+  & > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: #b19777;
+    color: #000;
   }
 }
