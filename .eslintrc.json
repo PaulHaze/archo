@@ -12,17 +12,17 @@
     "node": true
   },
   "rules": {
-    "import/extensions": [
-      "error",
-      "always",
-      "ignore packages",
-      { "js": "never", "css": "always" }
-    ],
+    // "import/extensions": [
+    //   "error",
+    //   // "always",
+    //   "ignore packages",
+    //   { "js": "never", "css": "always" }
+    // ],
     "import/no-unresolved": [0],
     "react/prop-types": [0],
     "no-param-reassign": [
       "error",
-      { "props": true, "ignorePropertyModificationsFor": ["state"] }
+      { "props": true, "ignorePropertyModificationsFor": ["state", "swiper"] }
     ],
     "no-console": "off",
     "react/react-in-jsx-scope": [0],

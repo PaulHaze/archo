@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Split extends React.Component {
+export class Split extends React.Component {
   target = React.createRef();
 
   split = () => {
@@ -16,5 +16,3 @@ class Split extends React.Component {
     return <div ref={this.target}>{this.props.children}</div>;
   }
 }
-
-export default Split;
