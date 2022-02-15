@@ -12,7 +12,12 @@
     "node": true
   },
   "rules": {
-    "import/extensions": ["error", "always", { "js": "never" }],
+    "import/extensions": [
+      "error",
+      "always",
+      "ignore packages",
+      { "js": "never", "css": "always" }
+    ],
     "import/no-unresolved": [0],
     "react/prop-types": [0],
     "no-param-reassign": [

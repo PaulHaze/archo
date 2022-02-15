@@ -1,12 +1,13 @@
 /* eslint-disable import/extensions */
 import { LightLayout } from '@/layouts';
 import { Footer } from '@/components';
+import { Hero } from './Hero';
 
 export function LightExampleOne() {
   return (
     <LightLayout>
       <div className="min-h-screen bg-primary-dark">
-        <p>LightExampleOne w/ LightLayout</p>
+        <Hero />
       </div>
       <div className="mt-2 bg-primary-dark">
         <Footer />

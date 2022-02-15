@@ -9,3 +9,6 @@ export { NavBar } from './NavBar';
 
 // FOOTER
 export { Footer } from './Footer';
+
+// HERO ELEMENTS
+export { Split } from './Split';
