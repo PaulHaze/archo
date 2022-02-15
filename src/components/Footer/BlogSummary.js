@@ -2,14 +2,13 @@ import Image from 'next/image';
 
 export function BlogSummary({ blogThumbImgUrl, blogTitle, blogDate }) {
   return (
-    <div className="flex">
-      <div className="h-20 aspect-[5/4] mr-2 relative">
-        {/* <img src="/assets/img/blog/blog_1.jpg" alt="" /> */}
+    <div className="flex my-3 bg-bluegray-800">
+      <div className="w-56 aspect-[5/4] h-auto mr-2 smd:mr-8 relative">
         <Image src={blogThumbImgUrl} objectFit="cover" layout="fill" />
       </div>
-      <div className="pr-2 flex flex-col justify-between">
-        <p className="text-xs smd:text-sm text-right">{blogTitle}</p>
-        <p className="text-sm text-sand text-right">{blogDate}</p>
+      <div className="pr-2 flex flex-col justify-around">
+        <p className="text-xs smd:text-sm  leading-5">{blogTitle}</p>
+        <p className="text-sm text-sand  mt-5">{blogDate}</p>
       </div>
     </div>
   );
