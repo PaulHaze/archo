@@ -4,12 +4,16 @@ import styles from './Footer.module.scss';
 import { ContactDetails } from './ContactDetails';
 import { RecentNews } from './RecentNews';
 import { Socials } from './Socials';
+import { EmailEntry } from './EmailEntry';
 
 export function Footer() {
   return (
     <footer className={styles.footerContainer}>
       <ContactDetails />
-      <RecentNews />
+      <div className="">
+        <RecentNews />
+        <EmailEntry />
+      </div>
       <Socials />
     </footer>
   );

@@ -3,7 +3,7 @@ import { Contact } from '../Contact';
 export function ContactDetails() {
   return (
     <div className="w-full bg-primary-dark flex items-start">
-      <div className="mt-20 py-12 pl-8 sm:pl-16 md:pl-8">
+      <div className="mt-20 py-12">
         <h3 className="font-semibold mb-10">Contact us</h3>
         <Contact
           icon="pe-7s-map-marker"
