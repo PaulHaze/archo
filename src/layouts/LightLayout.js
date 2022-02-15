@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 
 import Head from 'next/head';
 
-import { NavBar, Footer } from '@Components';
+import { NavBar } from '@Components';
 
 import appData from '@/data/app.json';
 

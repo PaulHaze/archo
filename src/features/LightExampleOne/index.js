@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { LightLayout } from '@/layouts';
 import { Footer } from '@/components';
 

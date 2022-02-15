@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { useEffect } from 'react';
 import Script from 'next/script';
 import { loadingPace } from '@/scripts/loadingPace';

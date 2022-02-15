@@ -14,9 +14,12 @@ export function Footer() {
       <RecentNews />
       <div className="w-full">
         <SocialIcons />
-        <div className="mt-6 inline-block w-3/4">
+        <div className="w-full mt-4">
           <EmailEntry />
         </div>
+        <p className="font-light text-sm mt-14 text-center text-sand">
+          Designed and built by Artemist
+        </p>
       </div>
     </footer>
   );
