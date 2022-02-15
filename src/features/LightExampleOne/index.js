@@ -7,7 +7,7 @@ export function LightExampleOne() {
       <div className="min-h-screen bg-primary-dark">
         <p>LightExampleOne w/ LightLayout</p>
       </div>
-      <div className="mt-2">
+      <div className="mt-2 bg-primary-dark">
         <Footer />
       </div>
     </LightLayout>
