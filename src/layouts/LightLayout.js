@@ -38,9 +38,6 @@ export function LightLayout({ children }) {
       </Head>
       <NavBar navbarRef={navbarRef} logoRef={logoRef} />
       {children}
-      <div className="mt-8">
-        <Footer />
-      </div>
     </>
   );
 }
