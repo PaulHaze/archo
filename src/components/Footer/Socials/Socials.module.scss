@@ -1,3 +1,17 @@
 .container {
-  @apply rounded-full w-16 h-16 border border-stone-100/20 flex items-center justify-center mt-8;
+  @apply rounded-full w-16 h-16 border border-sand/20 flex items-center justify-center mt-8 lg:mt-3 text-sand relative overflow-hidden transition-all duration-500;
+  &:after {
+    @apply bg-sand rounded-full transition-all ease-in-out duration-500;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  &:hover {
+    @apply text-primary-dark;
+    &:after {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

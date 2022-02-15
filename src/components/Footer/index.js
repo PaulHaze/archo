@@ -10,11 +10,14 @@ export function Footer() {
   return (
     <footer className={styles.footerContainer}>
       <ContactDetails />
-      <div className="">
-        <RecentNews />
-        <EmailEntry />
+
+      <RecentNews />
+      <div className="w-full">
+        <SocialIcons />
+        <div className="mt-6 inline-block w-3/4">
+          <EmailEntry />
+        </div>
       </div>
-      <SocialIcons />
     </footer>
   );
 }

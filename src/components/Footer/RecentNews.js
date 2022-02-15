@@ -5,7 +5,7 @@ import BlogTwoImg from '@/assets/img/blog_2.jpg';
 export function RecentNews() {
   return (
     <div className="w-full bg-primary-dark flex items-start">
-      <div className="mt-20 py-6">
+      <div className="mt-20 pt-12">
         <h3 className="font-semibold mb-10">Recent News</h3>
         <BlogSummary
           blogThumbImgUrl={BlogOneImg}
