@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     screens: {
       sm: '640px',
+      smd: '414px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',
@@ -32,6 +33,7 @@ module.exports = {
           dark: '#252531',
           light: '#F8F4F3',
         },
+        sand: '#B09779',
       },
       minWidth: {
         sm: '640px',
