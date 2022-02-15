@@ -2,15 +2,24 @@ import { Contact } from '../Contact';
 
 export function ContactDetails() {
   return (
-    <div className="w-full min-h-[200px] bg-primary-dark">
-      <div className="mt-20 pt-24 pl-8">
-        <h5 className="font-semibold">Contact us</h5>
+    <div className="w-full bg-primary-dark flex items-center">
+      <div className="mt-20 py-12 pl-8 sm:pl-16 md:pl-8">
+        <h3 className="font-semibold mb-10">Contact us</h3>
         <Contact
-          icon="map"
+          icon="pe-7s-map-marker"
           contactType="Head Office"
           contactDetails="123 Acacia Avenue, New York, USA, 20192"
         />
-        <Contact icon="email" contactType="Email Us" contactDetails="" />
+        <Contact
+          icon="pe-7s-mail"
+          contactType="Email Us"
+          contactDetails="support@gmail.com"
+        />
+        <Contact
+          icon="pe-7s-call"
+          contactType="Call Us"
+          contactDetails="+87986451666"
+        />
       </div>
     </div>
   );
