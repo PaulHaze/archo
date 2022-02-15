@@ -3,7 +3,7 @@ import styles from './Footer.module.scss';
 
 import { ContactDetails } from './ContactDetails';
 import { RecentNews } from './RecentNews';
-import { Socials } from './Socials';
+import { SocialIcons } from './SocialIcons';
 import { EmailEntry } from './EmailEntry';
 
 export function Footer() {
@@ -14,7 +14,7 @@ export function Footer() {
         <RecentNews />
         <EmailEntry />
       </div>
-      <Socials />
+      <SocialIcons />
     </footer>
   );
 }
