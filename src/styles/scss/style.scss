@@ -48,27 +48,22 @@
 
 ---------------------------------------------------------------- */
 
-@import "/assets/css/animate.min.css";
-@import "/assets/css/bootstrap.min.css";
-@import "/assets/css/flaticon.css";
-@import "/assets/css/fontawesome-all.min.css";
-@import "/assets/css/ionicons.min.css";
-@import "/assets/css/pe-icon-7-stroke.css";
-
-body{
-    background: red
-}
-
+@import '/assets/css/animate.min.css';
+@import '/assets/css/bootstrap.min.css';
+@import '/assets/css/flaticon.css';
+@import '/assets/css/fontawesome-all.min.css';
+@import '/assets/css/ionicons.min.css';
+@import '/assets/css/pe-icon-7-stroke.css';
 
 // Initialize
-@import "variables.scss";
+@import 'variables.scss';
 
 // Core CSS
-@import "typography.scss";
-@import "helper.scss";
+@import 'typography.scss';
+@import 'helper.scss';
 
 // Shortcodes
-@import "shortcodes.scss";
+@import 'shortcodes.scss';
 
 // responsive
-@import "responsive.scss";
+@import 'responsive.scss';

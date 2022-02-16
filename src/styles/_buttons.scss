@@ -5,93 +5,106 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-}
-.btn-curve:focus {
-  outline: none;
-}
-.btn-curve:hover {
-  outline: none;
-}
-.btn-curve:hover:after {
-  bottom: -30px;
-  transform: rotate(0deg);
-}
-.btn-curve:hover span {
-  color: #fff;
-}
-.btn-curve:after {
-  content: '';
-  position: absolute;
-  top: -30px;
-  left: -30px;
-  right: -30px;
-  bottom: 130%;
-  background: #1e1e1e;
-  transform: rotate(-10deg);
-  transition: all 0.8s;
-}
-.btn-curve span {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative;
-  z-index: 2;
-  transition: all 0.8s;
-}
-.btn-curve.btn-lit {
-  border-color: #fff;
-  color: #fff;
-}
-.btn-curve.btn-lit:hover span {
-  color: #b19777;
-}
-.btn-curve.btn-lit:after {
-  background: #fff;
-}
-.btn-curve.btn-blc {
-  background: #1e1e1e;
-}
-.btn-curve.btn-blc:after {
-  background: #fff;
-}
-.btn-curve.btn-blc span {
-  color: #fff;
-}
-.btn-curve.btn-blc:hover span {
-  color: #1e1e1e;
-}
-.btn-curve.btn-color {
-  background: #b19777;
-  border-color: #b19777;
-}
-.btn-curve.btn-color:after {
-  background: #fff;
-}
-.btn-curve.btn-color span {
-  color: #fff;
-}
-.btn-curve.btn-color:hover span {
-  color: #b19777;
-}
-.btn-curve.btn-lg {
-  padding: 14px 40px;
-}
-.btn-curve.btn-lg span {
-  font-size: 14px;
-}
-.btn-curve.btn-wit {
-  background: #fff;
-  border-color: #fff;
-}
-.btn-curve.btn-wit:after {
-  background: #090909;
-}
-.btn-curve.btn-wit span {
-  color: #1e1e1e;
-}
-.btn-curve.btn-wit:hover span {
-  color: #fff;
-}
-.btn-curve.btn-radius {
-  border-radius: 30px;
+  transition: all 0.4s;
+
+  // THE TEXT ELEMENT OF THE BUTTON
+  span {
+    @apply relative bottom-[1px];
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.8s;
+  }
+
+  // THE OVERLAY THAT APPEARS ON HOVER
+  &:after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: 130%;
+    background: #1e1e1e;
+    transform: rotate(-10deg);
+    transition: all 0.6s ease-in-out;
+  }
+
+  &.btn-blc {
+    background: #1e1e1e;
+    span {
+      color: #fff;
+    }
+    &:after {
+      background: #fff;
+    }
+    &:hover span {
+      color: #1e1e1e;
+    }
+  }
+
+  &.btn-lit {
+    border-color: $soft-white;
+    color: $soft-white;
+    &:after {
+      background: #fff;
+    }
+    &:hover span {
+      color: #b19777;
+    }
+  }
+
+  &.btn-wit {
+    background: #fff;
+    border-color: #fff;
+    span {
+      color: #1e1e1e;
+    }
+    &:after {
+      background: #090909;
+    }
+    &:hover span {
+      color: #fff;
+    }
+  }
+
+  &.btn-color {
+    background: #b19777;
+    border-color: #b19777;
+    span {
+      color: #fff;
+    }
+    &:after {
+      background: #fff;
+    }
+    &:hover span {
+      color: #b19777;
+    }
+  }
+
+  &.btn-lg {
+    @apply px-4 py-10;
+    span {
+      @apply text-base;
+    }
+  }
+
+  &.btn-radius {
+    border-radius: 30px;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+  &:hover {
+    span {
+      color: #fff;
+    }
+    &:after {
+      bottom: -30px;
+      transform: rotate(0deg);
+    }
+  }
 }
