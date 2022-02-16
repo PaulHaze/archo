@@ -34,7 +34,6 @@ export function Hero() {
   return (
     <header className="slider">
       <div className="swiper-container parallax-slider">
-        <h1>test</h1>
         {!load ? (
           <Swiper
             speed={1000}
@@ -119,6 +118,24 @@ export function Hero() {
             ))}
           </Swiper>
         ) : null}
+        <div className="setone">
+          <div
+            ref={navigationNextRef}
+            className="swiper-button-next swiper-nav-ctrl next-ctrl"
+          >
+            <i className="fas fa-chevron-right"></i>
+          </div>
+          <div
+            ref={navigationPrevRef}
+            className="swiper-button-prev swiper-nav-ctrl prev-ctrl"
+          >
+            <i className="fas fa-chevron-left"></i>
+          </div>
+        </div>
+        <div
+          ref={paginationRef}
+          className="swiper-pagination top playfont"
+        ></div>
       </div>
     </header>
   );
