@@ -1,3 +1,3 @@
-# Next.js + Tailwind CSS Example
+# Archo
 
-Just my version of a Tailwind/NextJs barebones starter...
+My version of the Archo template
