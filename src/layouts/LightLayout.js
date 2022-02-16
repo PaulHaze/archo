@@ -11,6 +11,7 @@ export function LightLayout({ children }) {
   const logoRef = useRef(null);
 
   useEffect(() => {
+    console.log('in useeffect');
     const navbar = navbarRef.current;
     const logo = logoRef.current;
 

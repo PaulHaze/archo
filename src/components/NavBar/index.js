@@ -35,10 +35,7 @@ export function NavBar({ navbarRef, logoRef, logoClass }) {
   };
 
   return (
-    <nav
-      className="navbar change navbar-expand-lg bg-stone-600"
-      ref={navbarRef}
-    >
+    <nav className="navbar change navbar-expand-lg nav-scroll" ref={navbarRef}>
       <div className="container">
         <Link href="/demos">
           <button type="button" className={`logo ${logoClass && logoClass}`}>

@@ -85,31 +85,26 @@ export function Hero() {
                   style={{ backgroundImage: `url(${slide.image})` }}
                   data-overlay-dark="6"
                 >
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-lg-8 col-md-10">
-                        <div className="caption hmone mt-100">
-                          <h5 className="thin">{slide.title.first}</h5>
-                          <Split>
-                            <h1
-                              data-splitting
-                              className="words chars splitting"
-                            >
-                              <Link href="#">{slide.title.second}</Link>
-                            </h1>
-                          </Split>
-                          {slide?.content && (
-                            <p className="mt-10">
-                              {slide.content.first} <br />
-                              {slide.content.second}
-                            </p>
-                          )}
-                          <Link href="#">
-                            <a className="btn-curve btn-bord btn-lit mt-30">
-                              <span>Read More</span>
-                            </a>
-                          </Link>
-                        </div>
+                  <div className="relative z-10">
+                    <div className="flex px-2">
+                      <div className="caption l-divider mt-100">
+                        <h5 className="thin">{slide.title.first}</h5>
+                        <Split>
+                          <h1 data-splitting className="words chars splitting">
+                            <Link href="#">{slide.title.second}</Link>
+                          </h1>
+                        </Split>
+                        {slide?.content && (
+                          <p className="mt-10">
+                            {slide.content.first} <br />
+                            {slide.content.second}
+                          </p>
+                        )}
+                        <Link href="#">
+                          <a className="btn-curve btn-bord btn-lit mt-30">
+                            <span>Read More</span>
+                          </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
