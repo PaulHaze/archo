@@ -104,7 +104,7 @@ export function Hero() {
                               {slide.content.second}
                             </p>
                           )}
-                          <Link href="/about">
+                          <Link href="#">
                             <a className="btn-curve btn-bord btn-lit mt-30">
                               <span>Read More</span>
                             </a>
@@ -123,19 +123,16 @@ export function Hero() {
             ref={navigationNextRef}
             className="swiper-button-next swiper-nav-ctrl next-ctrl"
           >
-            <i className="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right" />
           </div>
           <div
             ref={navigationPrevRef}
             className="swiper-button-prev swiper-nav-ctrl prev-ctrl"
           >
-            <i className="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-left" />
           </div>
         </div>
-        <div
-          ref={paginationRef}
-          className="swiper-pagination top playfont"
-        ></div>
+        <div ref={paginationRef} className="swiper-pagination top playfont" />
       </div>
     </header>
   );
