@@ -3,7 +3,7 @@
     "ecmaVersion": 12
   },
   "plugins": ["react", "prettier"],
-  "extends": ["airbnb", "plugin:prettier/recommended", "prettier"],
+  "extends": ["airbnb", "plugin:prettier/recommended", "prettier", "next"],
   "env": {
     "browser": true,
     "commonjs": true,
