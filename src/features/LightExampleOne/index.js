@@ -2,7 +2,7 @@
 import { LightLayout } from '@/layouts';
 import { Footer } from '@/components';
 import { Hero } from './Hero';
-import { AboutUs } from './AboutUs';
+import { AboutUs } from '@/features/AboutUs/AboutUs_1';
 
 export function LightExampleOne() {
   return (

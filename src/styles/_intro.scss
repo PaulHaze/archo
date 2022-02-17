@@ -1,0 +1,187 @@
+.about {
+  @apply transition-all;
+  position: relative;
+}
+.about .exp-img .img {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: 2;
+}
+.about .exp-img .img:after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+.about .exp-img .img .since {
+  position: absolute;
+  right: 70px;
+  top: 70px;
+}
+.about .exp-img .img .since span {
+  display: block;
+  color: #b19777;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.about .exp-img .img .since span:first-of-type {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.about .exp-img .img .years {
+  position: absolute;
+  left: 70px;
+  bottom: 70px;
+}
+.about .exp-img .img .years h2 {
+  font-size: 120px;
+  font-weight: 800;
+  background: url(/assets/img/about/about_us.jpg) no-repeat;
+  background-position: 18% 65%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+.about .exp-img .img .years h5 {
+  color: #b19777;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+.about .exp-content {
+  @apply md:mt-0 md:ml-1;
+  position: relative;
+  z-index: 2;
+}
+.about .exp-content:after {
+  content: '';
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  border: 10px solid #fafafa;
+  z-index: -1;
+}
+.about .exp-content.nopat:after {
+  display: none;
+}
+.about .exp-content ul {
+  margin: 30px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about .exp-content ul li {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.about .exp-content ul li:after {
+  content: '/';
+  position: relative;
+  margin: 0 15px;
+  color: #777;
+}
+.about .exp-content ul li:last-of-type:after {
+  display: none;
+}
+.about .ab-exp .pattern {
+  height: 100%;
+  width: 100%;
+}
+.about .ab-exp .years-exp {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 10px solid #f8f4f3;
+}
+.about .ab-exp .years-exp .exp-text {
+  position: absolute;
+  bottom: 40px;
+  left: -10px;
+  padding: 10px 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: #fff;
+}
+.about .ab-exp .years-exp .exp-text h2 {
+  font-size: 70px;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+.about .ab-exp .years-exp .exp-text h2:after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f8f4f3;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  z-index: -1;
+}
+.about .ab-exp .years-exp .exp-text h6 {
+  font-size: 14px;
+}
+.about .specialty ul {
+  margin: 0;
+}
+.about .specialty ul li {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0 0 15px;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 30px;
+}
+.about .specialty ul li span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #999;
+  margin-right: 30px;
+}
+.about .specialty ul li:last-of-type {
+  margin-bottom: 0;
+}
+.about .pat {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  z-index: 2;
+}
+.about .pat:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.94;
+}
+.intro-section .item h6 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
