@@ -1,5 +1,5 @@
-import { LightExampleOne } from '@Features';
+// import { LightExampleOne } from '@Features';
 
 export default function Home() {
-  return <LightExampleOne />;
+  return <div>Test page</div>;
 }

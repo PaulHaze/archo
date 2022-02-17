@@ -2,7 +2,7 @@ import React from 'react';
 import Script from 'next/script';
 import Head from 'next/head';
 
-import { LoadingScreen, ScrollToTop } from '@Components';
+import { ScrollToTop } from '@Components';
 
 import '@/styles/main.scss';
 import '@/styles/globals.css';
@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
       </Head>
-      <LoadingScreen />
+      {/* <LoadingScreen /> */}
       <Component {...pageProps} />
       <ScrollToTop />
 
