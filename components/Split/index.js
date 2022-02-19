@@ -15,6 +15,6 @@ export class Split extends React.Component {
   render() {
     const { children } = this.props;
     // return <div>{children}</div>;
-    return <div ref={this.target}>{this.props.children}</div>;
+    return <div ref={this.target}>{children}</div>;
   }
 }
