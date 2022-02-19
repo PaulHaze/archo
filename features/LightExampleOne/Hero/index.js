@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Parallax } from 'swiper';
 
-import { Split } from '@Components';
+// import { Split } from '@Components';
+import { SplitFn } from '@/components/Split/SplitFn';
 
 // eslint-disable-next-line import/extensions
 import { removeSlashFromPagination } from '@/scripts';
@@ -89,11 +90,11 @@ export function Hero() {
                     <div className="flex px-2">
                       <div className="caption l-divider mt-100">
                         <h5 className="thin">{slide.title.first}</h5>
-                        <Split>
+                        <SplitFn>
                           <h1 data-splitting className="words chars splitting">
                             <Link href="#">{slide.title.second}</Link>
                           </h1>
-                        </Split>
+                        </SplitFn>
                         {slide?.content && (
                           <p className="mt-10">
                             {slide.content.first} <br />

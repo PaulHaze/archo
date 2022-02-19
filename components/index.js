@@ -11,4 +11,4 @@ export { NavBar } from './NavBar';
 export { Footer } from './Footer';
 
 // HERO ELEMENTS
-export { Split } from './Split';
+export { SplitFn } from './Split/SplitFn';
