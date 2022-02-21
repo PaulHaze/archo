@@ -17,7 +17,7 @@ import 'swiper/css/navigation';
 
 SwiperCore.use([Navigation, Pagination, Parallax]);
 
-export function Hero() {
+export function LightHeroOne() {
   const [load, setLoad] = useState(true);
   useEffect(() => {
     setTimeout(() => {
