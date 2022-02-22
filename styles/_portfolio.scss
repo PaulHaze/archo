@@ -118,7 +118,10 @@
   letter-spacing: 2px;
 }
 .portfolio .gallery.twsty .items {
-  width: 50%;
+  width: 100%;
+  @screen md {
+    width: 50%;
+  }
 }
 .portfolio .gallery.twsty .four-column {
   width: 25% !important;
