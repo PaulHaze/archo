@@ -19,11 +19,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  -webkit-transition: all 0.7s cubic-bezier(1, 0, 0.25, 1);
-  -o-transition: all 0.7s cubic-bezier(1, 0, 0.25, 1);
   transition: all 0.7s cubic-bezier(1, 0, 0.25, 1);
-  -webkit-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
 .services .feat-top .notfull.animated {
@@ -35,8 +31,6 @@
   background-color: #fff;
   border: 1px solid #eee;
   border-right: 0;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 .services .item-bx:last-of-type {
@@ -86,8 +80,6 @@
   right: 0;
   bottom: 0;
   background: #fff;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
   z-index: -1;
 }
