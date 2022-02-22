@@ -4,6 +4,7 @@ import { Footer } from '@/components';
 import { LightHeroOne } from '@/features/Hero/LightHeroOne';
 import { AboutUs } from '@/features/AboutUs/AboutUs_1';
 import { ServicesOne } from '@/features/Services/ServicesOne';
+import { PortfolioOne } from '../Portfolio/PortfolioOne';
 
 export function LightExampleOne() {
   return (
@@ -12,6 +13,7 @@ export function LightExampleOne() {
         <LightHeroOne />
         <AboutUs />
         <ServicesOne />
+        <PortfolioOne />
       </div>
       <div className="mt-2 bg-primary-dark">
         <Footer />
