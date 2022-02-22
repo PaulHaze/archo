@@ -376,7 +376,7 @@ span:hover {
   letter-spacing: 10px !important;
 }
 /*------------------------------------------------------- margin-top (0/100) +5 -------------------------------------------------------*/
-.mt-0 {
+/* .mt-0 {
   margin-top: 0 !important;
 }
 .mt-5 {
@@ -441,9 +441,9 @@ span:hover {
 }
 .mt-100 {
   margin-top: 100px !important;
-}
+} */
 /*------------------------------------------------------- margin-bottom (0/100) +5 -------------------------------------------------------*/
-.mb-0 {
+/* .mb-0 {
   margin-bottom: 0 !important;
 }
 .mb-5 {
@@ -508,9 +508,9 @@ span:hover {
 }
 .mb-100 {
   margin-bottom: 100px !important;
-}
+} */
 /*------------------------------------------------------- padding-top (0/100) +5 -------------------------------------------------------*/
-.pt-0 {
+/* .pt-0 {
   padding-top: 0 !important;
 }
 .pt-5 {
@@ -571,10 +571,10 @@ span:hover {
   padding-top: 95px !important;
 }
 .pt-100 {
-  padding-top: 100px !important;
+  padding-top: 100px !important; */
 }
 /*------------------------------------------------------- padding-bottom (0/100) +5 -------------------------------------------------------*/
-.pb-0 {
+/* .pb-0 {
   padding-bottom: 0 !important;
 }
 .pb-5 {
@@ -639,7 +639,7 @@ span:hover {
 }
 .no-padding {
   padding: 0 !important;
-}
+} */
 /* ====================== [ End Helper Classes ] ====================== */
 /* ====================== [ Start Preloader ] ====================== */
 .pace {

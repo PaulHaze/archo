@@ -7,10 +7,10 @@ export function ServiceCard({ id, title, content }) {
       key={id}
     >
       <h2 className="numb my-5">{id}</h2>
-      <h6 className="mb-20 font-bold text-lg">{title}</h6>
+      <h6 className="mb-10 font-bold text-lg">{title}</h6>
       <p>{content}</p>
       <Link href="/about">
-        <a className="more mt-30 mb-10">Read More</a>
+        <a className="more mt-10 mb-10">Read More</a>
       </Link>
     </div>
   );

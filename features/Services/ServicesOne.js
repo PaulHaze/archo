@@ -6,7 +6,7 @@ export function ServicesOne() {
     <ServiceCard key={id} id={id} title={title} content={content} />
   ));
   return (
-    <section className="container services bg-primary-light p-0 pb-20 w-full">
+    <section className="container services bg-primary-light p-0 mb-28 w-full">
       <div className="section-head text-center py-20">
         <h6 className="wow fadeInDown" data-wow-delay=".3s">
           Best Features
@@ -17,7 +17,7 @@ export function ServicesOne() {
       </div>
 
       <div
-        className="flex flex-wrap  bord-box bg-img wow fadeInUp max-w-lg mx-auto"
+        className="flex flex-wrap bord-box bg-img wow fadeInUp max-w-lg mx-auto"
         data-wow-delay=".3s"
         style={{ backgroundImage: `url(${servicesData.image}` }}
       >
