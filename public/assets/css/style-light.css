@@ -1596,7 +1596,7 @@ body {
 /* ====================== [ End Slider ] ====================== */
 
 /* ====================== [ Start services ] ====================== */
-.services .bord-box {
+/* .services .bord-box {
   overflow: hidden;
 }
 .services .box-top {
@@ -1724,7 +1724,7 @@ body {
 .services.halfbg .ontop .item-bx:hover .numb,
 .services.halfbg .ontop .item-bx:hover .more {
   color: #fff;
-}
+} */
 /* ====================== [ End services ] ====================== */
 /* ====================== [ Start brands ] ====================== */
 .brands .box-top {
