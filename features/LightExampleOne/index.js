@@ -4,7 +4,7 @@ import { Footer } from '@/components';
 import { LightHeroOne } from '@/features/Hero/LightHeroOne';
 import { AboutUs } from '@/features/AboutUs/AboutUs_1';
 import { ServicesOne } from '@/features/Services/ServicesOne';
-import { PortfolioOne } from '../Portfolio/PortfolioOne';
+import { PortfolioOne } from '../Portfolio';
 
 export function LightExampleOne() {
   return (
