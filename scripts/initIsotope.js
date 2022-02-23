@@ -1,8 +1,9 @@
+/* eslint-disable no-undef */
 export const initIsotope = () => {
   let iso;
-  let grid = document.querySelectorAll('.gallery');
-  let filtersElem = document.querySelector('.filtering');
-  let buttonGroups = document.querySelectorAll('.filtering');
+  const grid = document.querySelectorAll('.gallery');
+  const filtersElem = document.querySelector('.filtering');
+  const buttonGroups = document.querySelectorAll('.filtering');
 
   if (grid.length >= 1) {
     grid.forEach(item => {
@@ -13,12 +14,12 @@ export const initIsotope = () => {
   }
 
   if (filtersElem) {
-    filtersElem.addEventListener('click', function (event) {
+    filtersElem.addEventListener('click', event => {
       if (!matchesSelector(event.target, 'span')) {
         return;
       }
-      var filterValue = event.target.getAttribute('data-filter');
-      filterValue = filterValue;
+      const filterValue = event.target.getAttribute('data-filter');
+      // filterValue = filterValue;
       iso.arrange({ filter: filterValue });
     });
     const radioButtonGroup = buttonGroup => {
@@ -30,8 +31,8 @@ export const initIsotope = () => {
         event.target.classList.add('active');
       });
     };
-    for (var i = 0, len = buttonGroups.length; i < len; i++) {
-      var buttonGroup = buttonGroups[i];
+    for (let i = 0, len = buttonGroups.length; i < len; i += 1) {
+      const buttonGroup = buttonGroups[i];
       radioButtonGroup(buttonGroup);
     }
   }

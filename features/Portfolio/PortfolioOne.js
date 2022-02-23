@@ -31,8 +31,9 @@ export function PortfolioOne() {
           </div>
         </div>
         <div className="row">
+          {/* FILTER BOX */}
           <div
-            className="filtering text-center col-12 wow fadeInUp"
+            className="filtering text-center col-12 mb-3 wow fadeInUp"
             data-wow-delay=".3s"
           >
             <div
@@ -54,7 +55,7 @@ export function PortfolioOne() {
             {portfolio1Data.portfolio.map(item => (
               <div
                 key={item.id}
-                className={`items ${item.filterClass} mt-50 wow fadeInUp`}
+                className={`items ${item.filterClass} mt-50 wow fadeInUp mb-10 `}
                 data-wow-delay=".3s"
               >
                 <div
@@ -63,13 +64,13 @@ export function PortfolioOne() {
                     backgroundImage: `url(${item.image})`,
                   }}
                 >
-                  <Link href="/project-details">
+                  <Link href="/portfolio">
                     <a>
                       <div className="item-img-overlay valign" />
                     </a>
                   </Link>
                 </div>
-                <div className="info mt-10">
+                <div className="info">
                   <h5>{item.title}</h5>
                   <span>{item.tag}</span>
                 </div>
