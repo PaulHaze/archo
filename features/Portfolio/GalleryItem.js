@@ -4,7 +4,7 @@ export function GalleryItem({ id, filterClass, image, title, tag }) {
   return (
     <div
       key={id}
-      className={`items ${filterClass} mt-50 wow fadeInUp mb-10 `}
+      className={`items ${filterClass} wow fadeInUp mb-10 `}
       data-wow-delay=".3s"
     >
       <div
@@ -20,8 +20,8 @@ export function GalleryItem({ id, filterClass, image, title, tag }) {
         </Link>
       </div>
       <div className="info">
-        <h5>{title}</h5>
-        <span>{tag}</span>
+        <h5 className="">{title}</h5>
+        <span className="">{tag}</span>
       </div>
     </div>
   );
