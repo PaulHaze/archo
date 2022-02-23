@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import Link from 'next/link';
+import { GalleryItem } from './GalleryItem';
 
 import portfolio1Data from '@/data/portfolio1.json';
 
@@ -33,7 +33,7 @@ export function PortfolioOne() {
         <div className="row">
           {/* FILTER BOX */}
           <div
-            className="filtering text-center col-12 mb-3 wow fadeInUp"
+            className="filtering text-center w-full mb-3 wow fadeInUp"
             data-wow-delay=".3s"
           >
             <div
@@ -51,31 +51,19 @@ export function PortfolioOne() {
             </div>
           </div>
 
-          <div className="gallery twsty full-width">
-            {portfolio1Data.portfolio.map(item => (
-              <div
-                key={item.id}
-                className={`items ${item.filterClass} mt-50 wow fadeInUp mb-10 `}
-                data-wow-delay=".3s"
-              >
-                <div
-                  className="item-img bg-img wow imago"
-                  style={{
-                    backgroundImage: `url(${item.image})`,
-                  }}
-                >
-                  <Link href="/portfolio">
-                    <a>
-                      <div className="item-img-overlay valign" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="info">
-                  <h5>{item.title}</h5>
-                  <span>{item.tag}</span>
-                </div>
-              </div>
-            ))}
+          {/* GALLERY */}
+          <div className="gallery twsty full-width max-w-xl mx-auto">
+            {portfolio1Data.portfolio.map(
+              ({ id, filterClass, image, title, tag }) => (
+                <GalleryItem
+                  id={id}
+                  filterClass={filterClass}
+                  image={image}
+                  title={title}
+                  tag={tag}
+                />
+              ),
+            )}
           </div>
         </div>
       </div>
