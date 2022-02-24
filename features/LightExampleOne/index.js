@@ -3,8 +3,9 @@ import { LightLayout } from '@/layouts';
 import { Footer } from '@/components';
 import { LightHeroOne } from '@/features/Hero/LightHeroOne';
 import { AboutUs } from '@/features/AboutUs/AboutUs_1';
-import { ServicesOne } from '@/features/Services/ServicesOne';
+import { ServicesOne } from '@/features/Services';
 import { PortfolioOne } from '../Portfolio';
+import { TestimonialsOne } from '../Testimonials';
 
 export function LightExampleOne() {
   return (
@@ -14,6 +15,7 @@ export function LightExampleOne() {
         <AboutUs />
         <ServicesOne />
         <PortfolioOne />
+        <TestimonialsOne />
       </div>
       <div className="mt-2 bg-primary-dark">
         <Footer />
