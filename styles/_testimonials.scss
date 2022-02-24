@@ -1,0 +1,138 @@
+.testimonials.grid .testim {
+  position: relative;
+}
+.testimonials.grid .testim .slick-track {
+  padding-top: 15px;
+}
+.testimonials.grid .item {
+  position: relative;
+  margin: 0 20px;
+}
+.testimonials.grid .item .quote-icon {
+  position: absolute;
+  top: -20px;
+  right: 12%;
+  width: 10%;
+  z-index: 2;
+}
+.testimonials.grid .item .cont {
+  padding: 50px 40px 40px;
+  border: 10px solid #f7f7f7;
+  border-top: 0;
+  position: relative;
+}
+.testimonials.grid .item .cont:after,
+.testimonials.grid .item .cont:before {
+  content: '';
+  position: absolute;
+  height: 10px;
+  background: #f7f7f7;
+  top: 0;
+}
+.testimonials.grid .item .cont:after {
+  width: 75%;
+  left: 0;
+}
+.testimonials.grid .item .cont:before {
+  width: 5%;
+  right: 0;
+}
+.testimonials.grid .item .cont p {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: #555;
+}
+.testimonials.grid .item .info {
+  margin-top: 30px;
+  padding-left: 30px;
+  position: relative;
+}
+.testimonials.grid .item .info:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 25px solid #f7f7f7;
+  border-right: 30px solid transparent;
+  position: absolute;
+  left: 100px;
+  top: -30px;
+}
+.testimonials.grid .item .info .author {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: table-cell;
+}
+.testimonials.grid .item .info .author img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.testimonials.grid .item .info h6 {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+  font-size: 16px;
+}
+.testimonials.grid .item .info h6 span {
+  color: #b19777;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 5px;
+  display: block;
+}
+.testimonials.grid .lit-box .cont {
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+.testimonials.grid .lit-box .info:after {
+  border-top-color: #fff !important;
+}
+.testimonials.grid .navs {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+}
+.testimonials.grid .navs span {
+  padding: 10px 20px;
+  background: #f8f4f3;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.testimonials.grid .navs span:hover {
+  background: #b19777;
+  color: #fff;
+}
+.testimonials.grid .navs .next {
+  left: auto;
+  right: 0;
+}
+.testimonials.bg-img .item .cont {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.testimonials.bg-img .item .cont:after,
+.testimonials.bg-img .item .cont:before {
+  background: rgba(255, 255, 255, 0.15);
+}
+.testimonials.bg-img .item .cont p {
+  color: #fff;
+}
+.testimonials.bg-img .item .info:after {
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+.testimonials.bg-img .navs span {
+  color: #b19777;
+}
+.testimonials.bg-img .navs span:hover {
+  background: #b19777;
+  color: #fff;
+}
