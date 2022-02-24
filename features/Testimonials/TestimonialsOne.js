@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
+
+import { TestimonialCard } from './TestimonialCard';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import testimonials1Data from '@/data/testimonials1.json';
@@ -56,6 +58,13 @@ export function TestimonialsOne({ bigTitle }) {
               <h4 className="playfont wow flipInX" data-wow-delay=".5s">
                 Satisfied Clients
               </h4>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="testim">
+              <TestimonialCard item={testimonials1Data[1]} />
             </div>
           </div>
         </div>
