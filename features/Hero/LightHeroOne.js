@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Parallax } from 'swiper';
 
-// import { Split } from '@Components';
 import { SplitFn } from '@/components/Split/SplitFn';
 
 // eslint-disable-next-line import/extensions
@@ -102,7 +101,7 @@ export function LightHeroOne() {
                           </p>
                         )}
                         <Link href="#">
-                          <a className="btn-curve btn-bord btn-lit mt-30">
+                          <a className="btn-curve btn-bord btn-lit mt-10">
                             <span>Read More</span>
                           </a>
                         </Link>
