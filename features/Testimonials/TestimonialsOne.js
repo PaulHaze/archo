@@ -1,3 +1,4 @@
+/* eslint-disable no-return-assign */
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
 
@@ -6,30 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import testimonials1Data from '@/data/testimonials1.json';
 
-/* 
-
-  const customSlider = useRef();
-
-  const renderArrows = () => {
-    return (
-      <div className="slider-arrow">
-        <ButtonBase
-          className="arrow-btn prev"
-          onClick={() => customSlider.current.slickPrev()}
-        >
-          <ArrowBackIosIcon />
-        </ButtonBase>
-        <ButtonBase
-          className="arrow-btn next"
-          onClick={() => customSlider.current.slickNext()}
-        >
-          <ArrowForwardIosIcon />
-        </ButtonBase>
-      </div>
-    );
-  };*/
-
-export function TestimonialsOne({ bigTitle }) {
+export function TestimonialsOne() {
   const customSlider = useRef();
   const renderArrows = () => (
     <div className="navs mt-[30px]">
@@ -40,7 +18,11 @@ export function TestimonialsOne({ bigTitle }) {
       >
         <i className="fas fa-long-arrow-alt-left" />
       </button>
-      <button type="button" onClick={() => customSlider.current.slickNext()}>
+      <button
+        type="button"
+        className="next"
+        onClick={() => customSlider.current.slickNext()}
+      >
         <i className="fas fa-long-arrow-alt-right" />
       </button>
     </div>
@@ -63,9 +45,43 @@ export function TestimonialsOne({ bigTitle }) {
         </div>
         <div className="row">
           <div className="col-lg-12">
-            <div className="testim">
-              <TestimonialCard item={testimonials1Data[1]} />
-            </div>
+            <Slider
+              className="testim"
+              {...{
+                ref: slider => (customSlider.current = slider),
+                dots: false,
+                arrows: true,
+                autoplay: false,
+                rows: 1,
+                slidesToScroll: 1,
+                slidesToShow: 2,
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 2,
+                    },
+                  },
+                  {
+                    breakpoint: 767,
+                    settings: {
+                      slidesToShow: 1,
+                    },
+                  },
+                  {
+                    breakpoint: 380,
+                    settings: {
+                      slidesToShow: 1,
+                    },
+                  },
+                ],
+              }}
+            >
+              {testimonials1Data.map(item => (
+                <TestimonialCard key={item.id} item={item} />
+              ))}
+            </Slider>
+            {renderArrows()}
           </div>
         </div>
       </div>
