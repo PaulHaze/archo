@@ -1,41 +1,52 @@
-.testimonials.grid .testim {
-  position: relative;
+.testimonials.grid {
+  .testim {
+    position: relative;
+    .slick-track {
+      padding-top: 15px;
+    }
+  }
 }
-.testimonials.grid .testim .slick-track {
-  padding-top: 15px;
-}
-.testimonials.grid .item {
+
+.testimonial,
+.item {
   position: relative;
   margin: 0 20px;
+  .quote-icon {
+    position: absolute;
+    top: -20px;
+    right: 12%;
+    z-index: 2;
+    width: 10%;
+    @screen sm {
+      width: 7%;
+      right: 6%;
+    }
+  }
+  .cont {
+    padding: 50px 40px 40px;
+    border: 10px solid #f7f7f7;
+    border-top: 0;
+    position: relative;
+  }
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    height: 10px;
+    background: #f7f7f7;
+    top: 0;
+  }
+  &:after {
+    width: 75%;
+    left: 0;
+  }
+  &:before {
+    width: 8%;
+    right: 0;
+  }
 }
-.testimonials.grid .item .quote-icon {
-  position: absolute;
-  top: -20px;
-  right: 12%;
-  width: 10%;
-  z-index: 2;
-}
-.testimonials.grid .item .cont {
-  padding: 50px 40px 40px;
-  border: 10px solid #f7f7f7;
-  border-top: 0;
-  position: relative;
-}
-.testimonials.grid .item .cont:after,
-.testimonials.grid .item .cont:before {
-  content: '';
-  position: absolute;
-  height: 10px;
-  background: #f7f7f7;
-  top: 0;
-}
-.testimonials.grid .item .cont:after {
-  width: 75%;
-  left: 0;
-}
-.testimonials.grid .item .cont:before {
-  width: 5%;
-  right: 0;
+
+.testimonials.grid .item .cont .testimonials.grid .item .cont:before {
 }
 .testimonials.grid .item .cont p {
   font-size: 16px;

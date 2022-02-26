@@ -1,6 +1,6 @@
 /* eslint-disable no-return-assign */
 import React, { useRef } from 'react';
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 
 import { TestimonialCard } from './TestimonialCard';
 import 'slick-carousel/slick/slick.css';
@@ -8,25 +8,25 @@ import 'slick-carousel/slick/slick-theme.css';
 import testimonials1Data from '@/data/testimonials1.json';
 
 export function TestimonialsOne() {
-  const customSlider = useRef();
-  const renderArrows = () => (
-    <div className="navs mt-[30px]">
-      <button
-        type="button"
-        className="prev"
-        onClick={() => customSlider.current.slickPrev()}
-      >
-        <i className="fas fa-long-arrow-alt-left" />
-      </button>
-      <button
-        type="button"
-        className="next"
-        onClick={() => customSlider.current.slickNext()}
-      >
-        <i className="fas fa-long-arrow-alt-right" />
-      </button>
-    </div>
-  );
+  // const customSlider = useRef();
+  // const renderArrows = () => (
+  //   <div className="navs mt-[30px]">
+  //     <button
+  //       type="button"
+  //       className="prev"
+  //       onClick={() => customSlider.current.slickPrev()}
+  //     >
+  //       <i className="fas fa-long-arrow-alt-left" />
+  //     </button>
+  //     <button
+  //       type="button"
+  //       className="next"
+  //       onClick={() => customSlider.current.slickNext()}
+  //     >
+  //       <i className="fas fa-long-arrow-alt-right" />
+  //     </button>
+  //   </div>
+  // );
   return (
     <section className="testimonials grid py-20 bg-white">
       <div className="container">
@@ -44,8 +44,12 @@ export function TestimonialsOne() {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-12">
-            <Slider
+          <div className="w-full max-w-md mx-auto">
+            <TestimonialCard
+              key={testimonials1Data[0].id}
+              item={testimonials1Data[0]}
+            />
+            {/* <Slider
               className="testim"
               {...{
                 ref: slider => (customSlider.current = slider),
@@ -80,8 +84,7 @@ export function TestimonialsOne() {
               {testimonials1Data.map(item => (
                 <TestimonialCard key={item.id} item={item} />
               ))}
-            </Slider>
-            {renderArrows()}
+            </Slider> */}
           </div>
         </div>
       </div>

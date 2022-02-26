@@ -1,6 +1,10 @@
 export function TestimonialCard({ item }) {
   return (
-    <div className="item wow fadeInUp" data-wow-delay=".3s" key={item.id}>
+    <div
+      className="testimonail item wow fadeInUp"
+      data-wow-delay=".3s"
+      key={item.id}
+    >
       <span className="quote-icon">
         <img src="/assets/img/clients/quote.svg" alt="" />
       </span>
